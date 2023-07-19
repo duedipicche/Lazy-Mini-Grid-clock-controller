@@ -179,7 +179,8 @@ const bool colorPreview = true;                                  // true = previ
 const uint8_t colorPreviewDuration = 3;                          // duration in seconds for previewing palettes/colorModes if colorPreview is enabled/true
 const bool reverseColorCycling = false;                          // true = reverse color movements
 const uint8_t brightnessLevels[3] {100, 140, 210};               // 0 - 255, brightness Levels (min, med, max) - index (0-2) will be saved to eeprom
-uint8_t brightness = brightnessLevels[0];                        // default brightness if none saved to eeprom yet / first run
+uint8_t brightness = brightnessLevels[0]; // default brightness if none saved to eeprom yet / first run
+bool DATE=false;
 #ifdef FADING
   uint8_t fadePixels = 2;                                        // fade pixels, 0 = disabled, 1 = only fade out pixels turned off, 2 = fade old out and fade new in
   uint8_t fadeDelay = 20;                                        // milliseconds between each fading step, 5-25 should work okay-ish
